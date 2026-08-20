@@ -112,8 +112,6 @@
 
 [Тестовое приложениее и Dockerfile](https://github.com/rrr89817384657-collab/diploma-test-app)
 
-![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/7.png)
-
 2. Регистри с собранным docker image. В качестве регистри может быть DockerHub или [Yandex Container Registry](https://cloud.yandex.ru/services/container-registry), созданный также с помощью terraform.
 
 Создать реестр в Yandex Cloud: yc container registry create --name diploma-registry
@@ -144,10 +142,29 @@
 
 Ожидаемый результат:
 1. Git репозиторий с конфигурационными файлами для настройки Kubernetes.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/10.png)
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/11.png)
+
 2. Http доступ на 80 порту к web интерфейсу grafana.
+
+В рамках дипломного проекта Ingress-контроллер не настраивался
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/12.png)
+
 3. Дашборды в grafana отображающие состояние Kubernetes кластера.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/14.png)
+
 4. Http доступ на 80 порту к тестовому приложению.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/7.png)
+
 5. Atlantis или terraform cloud или ci/cd-terraform
+
+В рамках проекта для автоматизации управления инфраструктурой и деплоем приложения был выбран подход на основе CI/CD terraform. Автоматизация реализована с использованием GitHub Actions
+
 ---
 ### Установка и настройка CI/CD
 
