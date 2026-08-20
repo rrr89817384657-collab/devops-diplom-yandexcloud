@@ -1,0 +1,4 @@
+---
+# Используем зеркало Яндекса для Ubuntu
+apt_mirror: "http://mirror.yandex.ru/ubuntu"
+apt_mirror_security: "http://mirror.yandex.ru/ubuntu"
