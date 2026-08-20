@@ -80,6 +80,20 @@
 
 1. Работоспособный Kubernetes кластер.
 
+Клонирование репозитория Kubespray:
+   git clone https://github.com/kubernetes-sigs/kubespray.git
+   
+Установка зависимостей Ansible:
+   pip3 install -r requirements.txt
+
+Создание инвентарной папки:
+   cp -rfp inventory/sample inventory/mycluster
+
+Настройка инвентарного файла
+
+Запуск установки Kubernetes:
+   ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml -b -v
+
 ![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/3.png)
 
 2. В файле `~/.kube/config` находятся данные для доступа к кластеру.
