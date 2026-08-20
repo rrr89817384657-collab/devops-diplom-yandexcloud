@@ -26,3 +26,22 @@ provider "yandex" {
   folder_id                = var.yandex_folder_id
   zone                     = var.yandex_default_zone
 }
+
+resource "yandex_container_registry" "diploma-registry" {
+  name       = "diploma-registry"
+  folder_id  = var.yandex_folder_id
+  labels = {
+    project = "diploma"
+    managed_by = "terraform"
+  }
+}
+
+output "registry_id" {
+  description = "ID of the created Container Registry"
+  value       = yandex_container_registry.diploma-registry.id
+}
+
+output "registry_name" {
+  description = "Name of the created Container Registry"
+  value       = yandex_container_registry.diploma-registry.name
+}
