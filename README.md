@@ -50,6 +50,13 @@
 1. Terraform сконфигурирован и создание инфраструктуры посредством Terraform возможно без дополнительных ручных действий, стейт основной конфигурации сохраняется в бакете или Terraform Cloud
 2. Полученная конфигурация инфраструктуры является предварительной, поэтому в ходе дальнейшего выполнения задания возможны изменения.
 
+
+   
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/1.png)
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/2.png) 
+
+
 ---
 ### Создание Kubernetes кластера
 
