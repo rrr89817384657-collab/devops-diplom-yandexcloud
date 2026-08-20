@@ -79,8 +79,16 @@
 Ожидаемый результат:
 
 1. Работоспособный Kubernetes кластер.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/3.png)
+
 2. В файле `~/.kube/config` находятся данные для доступа к кластеру.
-3. Команда `kubectl get pods --all-namespaces` отрабатывает без ошибок.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/4.png)
+
+4. Команда `kubectl get pods --all-namespaces` отрабатывает без ошибок.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/5.png)
 
 ---
 ### Создание тестового приложения
