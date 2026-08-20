@@ -114,12 +114,6 @@
 
 2. Регистри с собранным docker image. В качестве регистри может быть DockerHub или [Yandex Container Registry](https://cloud.yandex.ru/services/container-registry), созданный также с помощью terraform.
 
-Создать реестр в Yandex Cloud: yc container registry create --name diploma-registry
-
-Собрать образ: docker build -t cr.yandex/<REGISTRY_ID>/test-app:v1.0.0 .
-
-Загрузка образа в реестр: docker push cr.yandex/<REGISTRY_ID>/test-app:v1.0.0
-
 ![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/9.png)
 
 
