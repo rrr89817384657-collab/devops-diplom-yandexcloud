@@ -90,6 +90,9 @@
 
 ![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/5.png)
 
+
+[Проект](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/tree/main/files/kubespray/mycluster)
+
 ---
 ### Создание тестового приложения
 
