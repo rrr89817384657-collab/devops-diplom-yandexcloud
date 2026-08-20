@@ -106,7 +106,41 @@
 Ожидаемый результат:
 
 1. Git репозиторий с тестовым приложением и Dockerfile.
-2. Регистри с собранным docker image. В качестве регистри может быть DockerHub или [Yandex Container Registry](https://cloud.yandex.ru/services/container-registry), созданный также с помощью terraform.
+
+[Тестовое приложениее и Dockerfile](https://github.com/rrr89817384657-collab/diploma-test-app)
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/7.png)
+
+3. Регистри с собранным docker image. В качестве регистри может быть DockerHub или [Yandex Container Registry](https://cloud.yandex.ru/services/container-registry), созданный также с помощью terraform.
+
+
+docker build -t cr.yandex/crp14qda1noumnqqqsn0/test-app:v1.0.0 .
+
+docker push cr.yandex/crp14qda1noumnqqqsn0/test-app:v1.0.0
+
+Создал реестр в Yandex Cloud:
+
+yc container registry create --name diploma-registry
+
+Получил ID реестра:
+
+yc container registry list
+
+Аутентифицировался:
+
+yc container registry configure-docker
+
+Собрал образ:
+
+docker build -t cr.yandex/<REGISTRY_ID>/test-app:v1.0.0 .
+
+Загрузка образа в реестр
+
+docker push cr.yandex/crp14qda1noumnqqqsn0/test-app:v1.0.0
+
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/9.png)
+
 
 ---
 ### Подготовка cистемы мониторинга и деплой приложения
