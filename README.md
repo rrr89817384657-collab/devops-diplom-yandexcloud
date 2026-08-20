@@ -157,7 +157,7 @@
 
 2. Http доступ на 80 порту к web интерфейсу grafana.
 
-В рамках дипломного проекта Ingress-контроллер не настраивался
+В рамках дипломного проекта Ingress-контроллер не настраивал
 
 ![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/12.png)
 
@@ -190,6 +190,10 @@
 1. Интерфейс ci/cd сервиса доступен по http.
 2. При любом коммите в репозиторие с тестовым приложением происходит сборка и отправка в регистр Docker образа.
 3. При создании тега (например, v1.0.0) происходит сборка и отправка с соответствующим label в регистри, а также деплой соответствующего Docker образа в кластер Kubernetes.
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/16.png)
+
+![config](https://github.com/rrr89817384657-collab/devops-diplom-yandexcloud/blob/main/files/img/18.png)
 
 ---
 ## Что необходимо для сдачи задания?
